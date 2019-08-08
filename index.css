@@ -51,10 +51,37 @@ body {
 .game-content__comp {
   left: 85%;
 }
-
+.game-content__announce {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .game-img {
   border: 2px solid white;
   border-radius: 100%;
-  margin: .5rem;
+  margin: 8rem 2rem;
   padding: .5rem;
+  box-shadow: 0 1.6rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all .4s;
+}
+.game-img:hover {
+  transform: translateY(-.17rem);
+}
+.game-img:active {
+  transform: translateY(-.1rem);
+  box-shadow: 0 1.6rem 2rem rgba(0, 0, 0, 0.1);
+}
+.game-img:focus{
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .game-content__announce {
+    font-size: 1.4rem;
+  }
+  .game-img {
+
+    margin: 6rem 2rem;
+
+  }
 }
