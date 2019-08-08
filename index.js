@@ -19,7 +19,7 @@ function wordConverter(word) {
     return 'Rock';
   } else if (word === 'p') {
     return 'Paper';
-  }else {
+  }else if(word === 's'){
     return 'Scissors';
   }
 }
@@ -27,7 +27,7 @@ function wordConverter(word) {
 function win(computer,user) {
   userScore++;
   scoreBoard.innerHTML = `${userScore}:${compScore}`;
-  announce.innerHTML=`${wordConverter(user)} beats ${wordConverter(computer)} YOU WONE! 🔥`;
+  announce.innerHTML=`${wordConverter(user)} beats ${wordConverter(computer)} YOU WIN! 🔥`;
 }
 function lose(computer,user) {
   compScore++;
@@ -40,7 +40,7 @@ function draw(computer,user) {
 
 function CompChoices(choice) {
   randome = randomeChoice();
-  switch (randome + choice) {
+  switch (choice + randome) {
     case 'rs':
     case 'pr':
     case 'sp':
