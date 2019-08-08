@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
     <title>Rock,Paper,Scissors</title>
   </head>
   <body>
@@ -14,17 +15,17 @@
       </heading>
       <main class="game-content">
         <div class="game-content__bored">
-          <div class="game-content__score">0:0</div>
-          <div class="game-content__user">User</div>
-          <div class="game-content__comp">Comp</div>
+          <div class="game-content__score" id="score">0:0</div>
+          <div class="player game-content__user">User</div>
+          <div class="player game-content__comp">Comp</div>
         </div>
-        <h1 class="game-content__announce">
+        <h1 class="game-content__announce" id="announce">
           User VS Computer
         </h1>
         <figure class="game-content__img">
-          <a href="#"><img class="game-img--1" src="./img/icons8-hand-rock.png" alt="Rock image"></a>
-          <a href="#"><img class="game-img--2" src="./img/icons8-hand.png" alt="Paper image"></a>
-          <a href="#"><img class="game-img--3" src="./img/icons8-hand-scissors.png" alt="Scissors image"></a>
+          <a href="#"><img class="game-img" id="r" src="./img/icons8-hand-rock.png" alt="Rock image"></a>
+          <a href="#"><img class="game-img" id="p" src="./img/icons8-hand.png" alt="Paper image"></a>
+          <a href="#"><img class="game-img" id="s" src="./img/icons8-hand-scissors.png" alt="Scissors image"></a>
         </figure>
       </main>
     </section>
